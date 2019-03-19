@@ -1,0 +1,47 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <!-- take photo -->
+    <string name="photo_choose_title">如何选择图片？</string>
+    <string name="btn_positive_name_gallery">相册</string>
+    <string name="btn_negative_name_camera">拍照</string>
+    <string name="can_not_use_storage">请检查您的存储读写权限！～</string>
+
+    <!-- 我的 -->
+    <string name="fragment_my__text_account">账号</string>
+    <string name="fragment_my__text_level">等级</string>
+    <string name="fragment_my__btn_title_login">登录</string>
+    <string name="fragment_my__btn_title_score">评分</string>
+    <string name="fragment_my__btn_title_feedback">反馈</string>
+    <string name="fragment_my__btn_title_about">关于</string>
+    <string name="fragment_my__btn_title_share">分享</string>
+    <string name="fragment_my__btn_title_accumulate">积分</string>
+    <string name="fragment_my__btn_title_settings">设置</string>
+    <string name="fragment_my__btn_title_logout">退出</string>
+    <string name="fragment_my__tip_sign_in_success">签到成功</string>
+    <string name="fragment_my__tip_exit">退出当前账号？</string>
+
+    <!-- 评分 -->
+    <string name="dialog_fragment_score__text_title">标题:</string>
+    <string name="dialog_fragment_score__hint_title">请输入标题&#8230;</string>
+    <string name="dialog_fragment_score__text_content">内容:</string>
+    <string name="dialog_fragment_score__hint_content">请输入内容&#8230;</string>
+    <string name="dialog_fragment_score__invoke_success_result">感谢您的评价</string>
+
+    <!-- 反馈 -->
+    <string name="dialog_fragment_feedback__text_content">内容:</string>
+    <string name="dialog_fragment_feedback__hint_content">请输入内容&#8230;</string>
+    <string name="dialog_fragment_feedback__text_image">选择图片上传:</string>
+    <string name="dialog_fragment_feedback__invoke_success_result">感谢您的宝贵意见</string>
+
+    <!-- 关于 -->
+    <string name="activity_about__title">关于</string>
+    <string name="activity_about__btn_title_versions">历史版本</string>
+    <string name="activity_about__btn_title_service_agreement">服务协议</string>
+    <string name="activity_about__btn_title_privacy_right_policy">隐私权政策</string>
+
+    <!-- 设置 -->
+    <string name="activity_settings__title">设置</string>
+    <string name="activity_settings__btn_title_account_and_security">账号与安全</string>
+
+    <!-- 账号与安全 -->
+    <string name="activity_account_and_security__title">@string/activity_settings__btn_title_account_and_security</string>
+</resources>

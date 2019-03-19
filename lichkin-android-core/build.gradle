@@ -1,0 +1,50 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+
+        minSdkVersion 18
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+}
+
+// import lichkin
+dependencies {
+    api project(path: ':lichkin-framework-log')
+    api project(path: ':lichkin-framework-defines')
+    api project(path: ':lichkin-framework-utils')
+    api project(path: ':lichkin-framework-data')
+
+    implementation project(path: ':lichkin-android-icons')
+    implementation project(path: ':lichkin-android-share')
+}
+
+// by android
+dependencies {
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+
+    annotationProcessor "org.projectlombok:lombok:1.16.20"
+}
+
+// by android-core
+dependencies {
+    // https://mvnrepository.com/artifact/com.squareup.retrofit2/retrofit
+    api 'com.squareup.retrofit2:retrofit:2.4.0'
+    // https://mvnrepository.com/artifact/com.squareup.retrofit2/converter-jackson
+    api 'com.squareup.retrofit2:converter-jackson:2.4.0'
+
+    // https://github.com/square/picasso
+    api 'com.squareup.picasso:picasso:2.71828'
+}
+

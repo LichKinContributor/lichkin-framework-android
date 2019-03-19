@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/form_container_out"
+    android:background="@color/colorPrimaryDark">
+
+    <LinearLayout
+        style="@style/form_container_in"
+        android:layout_centerInParent="true">
+
+        <LinearLayout style="@style/input_container">
+
+            <EditText
+                android:id="@+id/userName"
+                style="@style/input_input_white"
+                android:hint="@string/hint_userName"
+                android:maxLength="16"
+                tools:ignore="Autofill"
+                android:inputType="textCapWords" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/input_container">
+
+            <EditText
+                android:id="@+id/loginName"
+                style="@style/input_input_white"
+                android:digits="@string/digits_letter_number"
+                android:hint="@string/hint_loginName"
+                android:inputType="textCapWords"
+                android:maxLength="32"
+                tools:ignore="Autofill" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/input_container"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tip_loginName_text1"
+                android:textColor="#EEEEEE"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tip_loginName_text2"
+                android:textColor="#EE8888"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/input_container"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/pwd"
+                style="@style/input_input_white"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:digits="@string/digits_letter_number_symbol"
+                android:hint="@string/hint_pwd"
+                android:inputType="textPassword"
+                tools:ignore="Autofill" />
+
+            <ImageView
+                android:id="@+id/btn_pwd_switcher"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                app:srcCompat="@drawable/ic_btn_eye_closed"
+                android:contentDescription="@drawable/ic_btn_eye_closed" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/input_container"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tip_pwd_text"
+                android:textColor="#EEEEEE"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/input_container"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center_vertical|center_horizontal">
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:id="@+id/loading"
+                style="@style/AVLoadingIndicatorView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:indicatorColor="#FFFFFF"
+                app:indicatorName="BallClipRotateIndicator" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout style="@style/form_button_container">
+
+        <Button
+            android:id="@+id/btn_submit"
+            style="@style/button_button_green"
+            android:text="@string/dlg_btn_positive_name_submit" />
+
+    </LinearLayout>
+
+</RelativeLayout>

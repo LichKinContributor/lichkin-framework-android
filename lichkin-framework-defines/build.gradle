@@ -1,0 +1,21 @@
+apply plugin: 'java-library'
+// 2019-01-05.16:05:43
+
+// import lichkin
+dependencies {
+    implementation project(path: ':lichkin-framework-log')
+}
+
+// by framework-defines
+dependencies {
+    // https://mvnrepository.com/artifact/javax.annotation/javax.annotation-api
+    api 'javax.annotation:javax.annotation-api:1.3.2'
+    // https://mvnrepository.com/artifact/org.projectlombok/lombok
+    api 'org.projectlombok:lombok:1.16.20'
+}
+
+sourceCompatibility = "7"
+targetCompatibility = "7"
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}

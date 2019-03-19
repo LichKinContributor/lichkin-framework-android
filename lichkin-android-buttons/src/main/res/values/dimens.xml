@@ -1,0 +1,10 @@
+<resources>
+    <dimen name="dimen_list_item_height">48dp</dimen>
+    <dimen name="dimen_list_item_padding_LR">12dp</dimen>
+    <dimen name="dimen_list_item_top_line_height">18dp</dimen>
+    <dimen name="dimen_list_item_bottom_line_height">1px</dimen>
+    <dimen name="dimen_list_item_img_size">20dp</dimen>
+    <dimen name="dimen_list_item_margin_left">8dp</dimen>
+    <dimen name="dimen_list_item_txt_size">16sp</dimen>
+    <dimen name="dimen_list_item_img_txt_gap">12dp</dimen>
+</resources>

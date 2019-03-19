@@ -1,0 +1,24 @@
+apply plugin: 'java-library'
+// 2019-01-05.16:05:43
+
+// import lichkin
+dependencies {
+    implementation project(path: ':lichkin-framework-log')
+    implementation project(path: ':lichkin-framework-defines')
+}
+
+// by framework-utils
+dependencies {
+    // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
+    api 'org.apache.commons:commons-lang3:3.7'
+    // https://mvnrepository.com/artifact/commons-collections/commons-collections
+    api 'commons-collections:commons-collections:3.2.2'
+    // https://mvnrepository.com/artifact/joda-time/joda-time
+    api 'joda-time:joda-time:2.9.9'
+}
+
+sourceCompatibility = "7"
+targetCompatibility = "7"
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}

@@ -1,0 +1,46 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+
+        minSdkVersion 18
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+}
+
+// import lichkin
+dependencies {
+    api project(path: ':lichkin-android-icons')
+    api project(path: ':lichkin-android-share')
+    api project(path: ':lichkin-android-core')
+    api project(path: ':lichkin-android-loading')
+    api project(path: ':lichkin-android-buttons')
+    api project(path: ':lichkin-android-webview')
+}
+
+// by android
+dependencies {
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+
+    annotationProcessor "org.projectlombok:lombok:1.16.20"
+}
+
+// by android-main
+dependencies {
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+
+    //https://github.com/yuzhiqiang1993/zxing.git
+    implementation 'com.github.yuzhiqiang1993:zxing:2.2.5'
+}

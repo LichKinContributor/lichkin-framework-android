@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ListItem">
+        <attr name="icon" format="reference" />
+        <attr name="text" format="reference|string" />
+        <attr name="firstItem" format="boolean" />
+        <attr name="lastItem" format="boolean" />
+    </declare-styleable>
+</resources>

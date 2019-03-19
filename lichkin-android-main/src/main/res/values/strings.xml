@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="title_navigation_menu_home">Home</string>
+    <string name="title_navigation_menu_my">My</string>
+
+    <string name="btn_title_fast_login">Fast Login/Register&#160;&gt;</string>
+    <string name="title_login">Account Login:</string>
+    <string name="hint_loginName_or_cellphone">Please enter loginName/cellphone</string>
+    <string name="hint_pwd">Please enter password</string>
+    <string name="btn_next">Next&#160;&#160;&gt;</string>
+    <string name="text_service_agreement1">Login/Register as agreed the&#160;</string>
+    <string name="text_service_agreement2">Service Agreement</string>
+    <string name="text_service_agreement3">&#160;and&#160;</string>
+    <string name="text_service_agreement4">Privacy Right Policy</string>
+    <string name="btn_title_account_login">Account Login&#160;&gt;</string>
+    <string name="title_fast_login">Fast Login/Register:</string>
+    <string name="hint_cellphone">Please enter your cellphone</string>
+    <string name="tip_sms_sended">SMS sended to</string>
+    <string name="btn_title_sms_resend">Resend&#160;&#160;&gt;</string>
+    <string name="hint_security_code">Please enter security code</string>
+    <string name="hint_userName">Please enter your name</string>
+    <string name="hint_loginName">Please enter loginName</string>
+    <string name="tip_loginName_text1">loginName can be made up of letters and Numbers</string>
+    <string name="tip_loginName_text2">Note: there is only one setup opportunity</string>
+    <string name="tip_pwd_text">Passwords can be made up of letters, numbers, symbols.</string>
+
+    <string name="dlg_btn_positive_name_copy_to_clipboard">Copy to Clipboard</string>
+</resources>

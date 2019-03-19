@@ -1,0 +1,27 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="title_navigation_menu_home">首页</string>
+    <string name="title_navigation_menu_my">我的</string>
+
+    <string name="btn_title_fast_login">快速登录/注册&#160;&gt;</string>
+    <string name="title_login">账号登录：</string>
+    <string name="hint_loginName_or_cellphone">请输入用户名/手机号码</string>
+    <string name="hint_pwd">请输入密码</string>
+    <string name="btn_next">下一步&#160;&#160;&gt;</string>
+    <string name="text_service_agreement1">登录/注册即视为同意</string>
+    <string name="text_service_agreement2">服务协议</string>
+    <string name="text_service_agreement3">&#160;和&#160;</string>
+    <string name="text_service_agreement4">隐私权政策</string>
+    <string name="btn_title_account_login">账号登录&#160;&gt;</string>
+    <string name="title_fast_login">快速登录/注册：</string>
+    <string name="hint_cellphone">请输入手机号码</string>
+    <string name="tip_sms_sended">短信已经发送到</string>
+    <string name="btn_title_sms_resend">重新发送&#160;&#160;&gt;</string>
+    <string name="hint_security_code">请输入验证码</string>
+    <string name="hint_userName">请输入姓名</string>
+    <string name="hint_loginName">请输入用户名</string>
+    <string name="tip_loginName_text1">用户名可由字母和数字组成</string>
+    <string name="tip_loginName_text2">注：只有一次设置机会</string>
+    <string name="tip_pwd_text">密码可由字母、数字、英文符号组成</string>
+
+    <string name="dlg_btn_positive_name_copy_to_clipboard">复制到剪贴板</string>
+</resources>

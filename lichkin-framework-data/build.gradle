@@ -1,0 +1,21 @@
+apply plugin: 'java-library'
+// 2019-01-05.16:05:43
+
+// import lichkin
+dependencies {
+    implementation project(path: ':lichkin-framework-log')
+    implementation project(path: ':lichkin-framework-defines')
+    implementation project(path: ':lichkin-framework-utils')
+}
+
+// by framework-data
+dependencies {
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.dataformat/jackson-dataformat-xml
+    api 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.9.5'
+}
+
+sourceCompatibility = "7"
+targetCompatibility = "7"
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}

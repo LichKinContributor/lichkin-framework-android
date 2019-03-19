@@ -1,0 +1,200 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {//具体实现需要修改
+        release {
+            keyAlias 'release'
+            keyPassword 'P@$5w0rd'
+            storeFile file('C:/Gits/github/lichkin-framework-android/docs/release.jks')
+            storePassword 'P@$5w0rd'
+        }
+        debug {
+            keyAlias 'debug'
+            keyPassword 'P@$5w0rd'
+            storeFile file('C:/Gits/github/lichkin-framework-android/docs/debug.jks')
+            storePassword 'P@$5w0rd'
+        }
+    }
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.lichkin.android.lichkin"//具体实现需要修改
+        minSdkVersion 18
+        targetSdkVersion 28
+        versionCode 1//具体实现需要修改
+        versionName "1.0.0"//具体实现需要修改
+        multiDexEnabled true
+        ndk {// 高德地图使用需引入
+            abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", "x86", "x86_64"
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+            manifestPlaceholders = [
+                    'QQ_APPID': '101545938'
+            ]
+        }
+        debug {
+            signingConfig signingConfigs.debug
+            manifestPlaceholders = [
+                    'QQ_APPID': '101545938'
+            ]
+        }
+    }
+}
+
+// by framework-log
+dependencies {
+}
+
+// by framework-defines
+dependencies {
+    // https://mvnrepository.com/artifact/javax.annotation/javax.annotation-api
+    implementation 'javax.annotation:javax.annotation-api:1.3.2'
+    // https://mvnrepository.com/artifact/org.projectlombok/lombok
+    implementation 'org.projectlombok:lombok:1.16.20'
+}
+
+// by framework-utils
+dependencies {
+    // https://mvnrepository.com/artifact/org.apache.commons/commons-lang3
+    implementation 'org.apache.commons:commons-lang3:3.7'
+    // https://mvnrepository.com/artifact/commons-collections/commons-collections
+    implementation 'commons-collections:commons-collections:3.2.2'
+    // https://mvnrepository.com/artifact/joda-time/joda-time
+    implementation 'joda-time:joda-time:2.9.9'
+}
+
+// by framework-data
+dependencies {
+    // https://mvnrepository.com/artifact/com.fasterxml.jackson.dataformat/jackson-dataformat-xml
+    implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.9.5'
+}
+
+// by android
+dependencies {
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+
+    annotationProcessor "org.projectlombok:lombok:1.16.20"
+}
+
+// by Android-PullToRefresh
+dependencies {
+}
+
+// by Android-TakePhoto
+dependencies {
+    implementation 'com.soundcloud.android.crop:lib_crop:1.0.0'
+    implementation 'com.darsh.multipleimageselect:multipleimageselect:1.0.5'
+    implementation 'me.shaohui.advancedluban:library:1.3.2'
+}
+
+// by android-icons
+dependencies {
+}
+
+// by android-share
+dependencies {
+}
+
+// by android-core
+dependencies {
+    // https://mvnrepository.com/artifact/com.squareup.retrofit2/retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+    // https://mvnrepository.com/artifact/com.squareup.retrofit2/converter-jackson
+    implementation 'com.squareup.retrofit2:converter-jackson:2.4.0'
+
+    // https://github.com/square/picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
+}
+
+// by android-loading
+dependencies {
+    // https://github.com/81813780/AVLoadingIndicatorView
+    implementation 'com.wang.avi:library:2.1.3'
+}
+
+// by android-buttons
+dependencies {
+}
+
+// by android-webview
+dependencies {
+    // https://github.com/lzyzsd/JsBridge
+    implementation 'com.github.lzyzsd:JsBridge:1.0.4'
+}
+
+// by android-main
+dependencies {
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+
+    //https://github.com/yuzhiqiang1993/zxing.git
+    implementation 'com.github.yuzhiqiang1993:zxing:2.2.5'
+}
+
+// by android-news
+dependencies {
+    // https://github.com/youth5201314/banner
+    implementation 'com.youth.banner:banner:1.4.10'
+}
+
+// by android-my
+dependencies {
+    // https://github.com/DreaminginCodeZH/MaterialRatingBar
+    implementation 'me.zhanghai.android.materialratingbar:library:1.3.1'
+}
+
+// by android-find
+dependencies {
+    // 高德地图
+    implementation 'com.amap.api:navi-3dmap:latest.integration'
+    implementation 'com.amap.api:search:latest.integration'
+    implementation 'com.amap.api:location:latest.integration'
+}
+
+// import libs
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar', '*.aar'])
+}
+
+// import multidex
+dependencies {
+    implementation 'com.android.support:multidex:1.0.3'
+}
+
+dependencies {//具体实现需要引入的项目
+    // https://github.com/JakeWharton/butterknife
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    implementation 'com.jakewharton:butterknife-compiler:8.8.1'
+    annotationProcessor "com.jakewharton:butterknife-compiler:8.8.1"
+}
+
+dependencies {//具体实现使用jar包及aar包引入的项目
+    //jar //由lichkin-android-core引入
+//    api project(path: ':lichkin-framework-log')
+//    api project(path: ':lichkin-framework-defines')
+//    api project(path: ':lichkin-framework-utils')
+//    api project(path: ':lichkin-framework-data')
+
+    //aar thirdparty
+    implementation project(path: ':Android-TakePhoto')
+    implementation project(path: ':Android-PullToRefresh')
+
+    //aar lichkin core //由lichkin-android-main引入
+//    implementation project(path: ':lichkin-android-icons')
+//    implementation project(path: ':lichkin-android-share')
+//    implementation project(path: ':lichkin-android-core')
+//    implementation project(path: ':lichkin-android-loading')
+//    implementation project(path: ':lichkin-android-buttons')
+//    implementation project(path: ':lichkin-android-webview')
+
+    //aar lichkin implements
+    implementation project(path: ':lichkin-android-main')
+    implementation project(path: ':lichkin-android-news')
+    implementation project(path: ':lichkin-android-my')
+    implementation project(path: ':lichkin-android-find')
+}

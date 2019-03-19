@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">LichKin</string>
+
+    <string name="title_navigation_menu_demo">Demo</string>
+    <string name="title_navigation_menu_find">Find</string>
+    <string name="title_navigation_menu_news">News</string>
+    <string name="title_navigation_menu_game">Game</string>
+    <string name="title_navigation_menu_park">Park</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical">
+
+    <com.lichkin.framework.app.android.widget.Title
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_title_height"
+        app:text="@string/activity_settings__title" />
+
+    <com.lichkin.framework.app.android.widget.ListItem
+        android:id="@+id/btn_account_and_security"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:firstItem="true"
+        app:icon="@drawable/ic_btn_account"
+        app:lastItem="true"
+        app:text="@string/activity_settings__btn_title_account_and_security" />
+
+</LinearLayout>

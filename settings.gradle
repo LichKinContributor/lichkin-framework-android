@@ -1,0 +1,22 @@
+include ':app'
+
+include ':lichkin-framework-log'
+include ':lichkin-framework-defines'
+include ':lichkin-framework-utils'
+include ':lichkin-framework-data'
+
+include ':Android-PullToRefresh'
+include ':Android-TakePhoto'
+
+include ':lichkin-android-icons'
+include ':lichkin-android-share'
+include ':lichkin-android-core'
+include ':lichkin-android-loading'
+include ':lichkin-android-buttons'
+include ':lichkin-android-webview'
+
+include ':lichkin-android-main'
+
+include ':lichkin-android-news'
+include ':lichkin-android-find'
+include ':lichkin-android-my'

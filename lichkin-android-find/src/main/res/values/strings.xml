@@ -1,0 +1,7 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="NotInstalledAMAP">Please install AMap first</string>
+    <string name="find_key">supermarket</string>
+
+    <string name="meter">m</string>
+    <string name="detail">detail</string>
+</resources>

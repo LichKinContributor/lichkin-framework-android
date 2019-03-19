@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout style="@style/news_container_out">
+
+    <LinearLayout style="@style/news_containter_in">
+
+        <include layout="@layout/news_item_part_title" />
+
+        <include layout="@layout/news_item_part_brief" />
+
+    </LinearLayout>
+
+</LinearLayout>

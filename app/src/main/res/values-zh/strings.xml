@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="app_name">鑫宏利业</string>
+
+    <string name="title_navigation_menu_demo">演示</string>
+    <string name="title_navigation_menu_find">查找</string>
+    <string name="title_navigation_menu_news">新闻</string>
+    <string name="title_navigation_menu_game">游戏</string>
+    <string name="title_navigation_menu_park">公园</string>
+</resources>

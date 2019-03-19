@@ -1,0 +1,7 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="NotInstalledAMAP">请先安装高德地图</string>
+    <string name="find_key">超市</string>
+
+    <string name="meter">米</string>
+    <string name="detail">详情</string>
+</resources>

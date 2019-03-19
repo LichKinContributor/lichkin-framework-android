@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#EBEBEB"
+        android:orientation="vertical">
+
+        <com.lichkin.framework.app.android.widget.ListItem
+            android:id="@+id/Log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:firstItem="true"
+            app:lastItem="true"
+            app:text="Log" />
+
+        <com.lichkin.framework.app.android.widget.ListItem
+            android:id="@+id/Toast1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:firstItem="true"
+            app:text="Toast1" />
+
+        <com.lichkin.framework.app.android.widget.ListItem
+            android:id="@+id/Toast2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:text="Toast2" />
+
+        <com.lichkin.framework.app.android.widget.ListItem
+            android:id="@+id/Toast3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:lastItem="true"
+            app:text="Toast3" />
+
+        <com.lichkin.framework.app.android.widget.ListItem
+            android:id="@+id/Alert1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:firstItem="true"
+            app:text="Alert1" />
+
+        <com.lichkin.framework.app.android.widget.ListItem
+            android:id="@+id/Alert2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:text="Alert2" />
+
+        <com.lichkin.framework.app.android.widget.ListItem
+            android:id="@+id/Alert3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:text="Alert3" />
+
+        <com.lichkin.framework.app.android.widget.ListItem
+            android:id="@+id/Alert4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:lastItem="true"
+            app:text="Alert4" />
+
+        <com.lichkin.framework.app.android.widget.ListItem
+            android:id="@+id/WebView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:firstItem="true"
+            app:lastItem="true"
+            app:text="WebView" />
+
+        <com.lichkin.framework.app.android.widget.ListItem
+            android:id="@+id/Share"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:firstItem="true"
+            app:lastItem="true"
+            app:text="Share" />
+
+    </LinearLayout>
+
+</ScrollView>

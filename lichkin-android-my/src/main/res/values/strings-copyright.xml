@@ -1,0 +1,5 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <string name="activity_about__text_copyright1">鑫宏利业 版权所有</string>
+    <string name="activity_about__text_copyright2">Copyright © 2019&#8211;2019 LichKin.</string>
+    <string name="activity_about__text_copyright3">All Rights Reserved.</string>
+</resources>

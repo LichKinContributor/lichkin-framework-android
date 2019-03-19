@@ -1,0 +1,16 @@
+apply plugin: 'java-library'
+// 2019-01-05.16:05:43
+
+// import lichkin
+dependencies {
+}
+
+// by framework-log
+dependencies {
+}
+
+sourceCompatibility = "7"
+targetCompatibility = "7"
+tasks.withType(JavaCompile) {
+    options.encoding = "UTF-8"
+}
