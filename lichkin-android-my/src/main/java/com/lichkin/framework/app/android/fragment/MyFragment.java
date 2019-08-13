@@ -55,6 +55,7 @@ import com.lichkin.framework.app.android.utils.LKAndroidUtils;
 import com.lichkin.framework.app.android.utils.LKBase64;
 import com.lichkin.framework.app.android.utils.LKDialog;
 import com.lichkin.framework.app.android.utils.LKImageLoader;
+import com.lichkin.framework.app.android.utils.LKPropertiesLoader;
 import com.lichkin.framework.app.android.utils.LKRetrofit;
 import com.lichkin.framework.app.android.utils.LKToast;
 import com.lichkin.framework.defines.beans.LKErrorMessageBean;
@@ -169,18 +170,28 @@ public class MyFragment extends Fragment implements TakePhoto.TakeResultListener
         view.findViewById(R.id.btn_about).setOnClickListener(new BtnOnClickListener4ToActivity(this, AboutActivity.class));
 
         // 分享
-        view.findViewById(R.id.btn_share).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                LKAndroidUtils.appShare(MyFragment.this.getContext());
-            }
-        });
+        View btnShare=  view.findViewById(R.id.btn_share);
+        if (LKPropertiesLoader.getBoolean("lichkin.framework.share.show")){
+            btnShare .setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    LKAndroidUtils.appShare(MyFragment.this.getContext());
+                }
+            });
+        }else{
+            btnShare .setVisibility(View.GONE);
+        }
 
         // 积分
         view.findViewById(R.id.btn_accumulate).setOnClickListener(new BtnOnClickListener4ToWebView(true, this, "lichkin.framework.pages.accumulate", null));
 
         // 设置
-        view.findViewById(R.id.btn_settings).setOnClickListener(new BtnOnClickListener4ToActivity(this, SettingsActivity.class));
+        View btnSettings = view.findViewById(R.id.btn_settings);
+        if (LKPropertiesLoader.getBoolean("lichkin.framework.settings.show")){
+            btnSettings.setOnClickListener(new BtnOnClickListener4ToActivity(this, SettingsActivity.class));
+        }else{
+            btnSettings .setVisibility(View.GONE);
+        }
 
         // 退出
         view.findViewById(R.id.btn_logout).setOnClickListener(new View.OnClickListener() {

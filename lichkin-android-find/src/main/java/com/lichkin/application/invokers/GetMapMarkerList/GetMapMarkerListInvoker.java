@@ -15,7 +15,7 @@ import retrofit2.http.POST;
  */
 public interface GetMapMarkerListInvoker {
 
-    @POST(LKFrameworkStatics.WEB_MAPPING_API + "/GetMapMarkerQuery")
+    @POST(LKFrameworkStatics.WEB_MAPPING_API + "/GetMapMarkerList")
     Call<LKResponseBean<List<GetMapMarkerListOut>>> invoke(@Body GetMapMarkerListIn in);
 
 }

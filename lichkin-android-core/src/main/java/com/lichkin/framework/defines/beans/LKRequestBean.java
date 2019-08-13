@@ -7,6 +7,6 @@ import lombok.Setter;
 @Setter
 public class LKRequestBean {
 
-    private Datas datas;
+    private Datas datas = new Datas();
 
 }

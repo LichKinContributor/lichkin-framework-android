@@ -194,7 +194,7 @@ dependencies {//具体实现使用jar包及aar包引入的项目
 
     //aar lichkin implements
     implementation project(path: ':lichkin-android-main')
-    implementation project(path: ':lichkin-android-news')
+//    implementation project(path: ':lichkin-android-news')
     implementation project(path: ':lichkin-android-my')
     implementation project(path: ':lichkin-android-find')
 }
